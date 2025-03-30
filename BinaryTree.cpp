@@ -96,7 +96,7 @@ int BinaryTree::countNodes(Node* node) {
 }
 
 int BinaryTree::height(Node* node) {
-    if (node == nullptr) return -1; 
+    if (node == nullptr) return -1; // height of empty tree is -1
     return 1 + max(height(node->left), height(node->right));
 }
 

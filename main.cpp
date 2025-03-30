@@ -3,7 +3,7 @@
 
 int main() {
     BinaryTree tree;
-
+    // Insert values
     tree.insert(50);
     tree.insert(30);
     tree.insert(70);
@@ -11,13 +11,13 @@ int main() {
     tree.insert(40);
     tree.insert(60);
     tree.insert(80);
-
+// Inorder traversal
     std::cout << "Inorder traversal: ";
     tree.inorder(); // Output: 20 30 40 50 60 70 80
-
+    // Search for values
     std::cout << "Searching for 40: " << (tree.search(40) ? "Found" : "Not Found") << std::endl; // Output: Found
     std::cout << "Searching for 90: " << (tree.search(90) ? "Found" : "Not Found") << std::endl; // Output: Not Found
-
+    // Delete a value
     tree.deleteNode(30);
     std::cout << "Inorder traversal after deleting 30: ";
     tree.inorder(); 
